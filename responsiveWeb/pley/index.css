@@ -1,0 +1,173 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background: #fff;
+}
+
+/*------------navigation bar css-----------------*/
+.header {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.9) !important;
+	z-index: 1000;
+}
+
+.header ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header li {
+    float: left;
+}
+
+.header li .head {
+	color: #fff !important;
+	background: #001f3f;
+}
+
+.header li a {
+	display: block;
+    text-decoration: none;
+    padding: 1em;
+    color: #001f3f;
+    width: 80px;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+		-ms-transition: all 0.2s linear;
+		 -o-transition: all 0.2s linear;
+			transition: all 0.2s linear;
+}
+
+.header li a:hover {
+	background: #001f3f;
+	color: #fff;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+		-ms-transition: all 0.2s linear;
+		 -o-transition: all 0.2s linear;
+			transition: all 0.2s linear;
+}
+
+/*-----------------Video css here---------------------*/
+#vid {
+	position: relative;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+/*------------Footer css here------------------------*/
+
+.footer {
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	background: #001f3f;
+	color: #fff;
+	padding-top: 20px;
+}
+
+/*-----------content on video css---------------*/
+#preview {
+	text-align: center;
+	padding: 3em;
+	position: absolute;
+   	top: 0;
+   	height: auto;
+   	margin: 0;
+   	left: 0;
+   	width: 58%;
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: 15%;
+   	background: rgba(0,0,0,0.9);
+
+}
+
+#preview h1 {
+	font-size: 3em;
+}
+
+#preview p {
+	font-size: 2em;
+}
+
+#preview h1, #preview p {
+	color: #fff;
+	padding: 6px;
+	text-transform: uppercase;
+	line-height: 2;
+	letter-spacing: 3px;
+	display: inline;
+	white-space: pre;
+}
+
+/*---------btn css here -------------------*/
+.btn {
+	background: #fff !important;
+	border: 3px #001f3f solid;
+	color: #001f3f !important;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0.3em 1.5em !important;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+/*----------Miscelaneous margin css----------------------*/
+.margintTop{
+	margin-top: 11em;
+}
+.top{
+	margin-top: 7em;
+}
+.margin-offset{
+	margin-top: -0.5em;
+}
+
+.left{
+	margin-left: -8em;
+}
+
+.marginLeft{
+	margin-left: 15px;
+}
+
+.pullRight{
+	float:right;
+}
+.terms{
+	cursor: pointer;
+}
+
+/*-------------media screen css here-------------------*/
+@media only screen and (max-width: 1073px){
+    .margin-offset{ margin-top: 0;}
+    .footer{height: auto;}
+    .text-right{float: left;}
+    #preview h1{font-size: 12pt;}
+    #preview p{font-size: 10pt;}
+}
+@media only screen and (max-width: 640px){
+    .header{height: 100px;}
+    .margin-offset{ margin-top: 0;}
+    .footer{height: auto;}
+    .text-right{float: left;}
+    #preview{width: 100%;position: relative;height:200px;margin-top: 100px;margin-left: 0}
+    #preview h1{font-size: 10pt;}
+    #preview p{font-size: 8pt;}
+    #vid{display:none;}
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pley</title>
+    <meta name="description" content="Pley: Rent Lego sets">
+    <meta name="author" content="Shrutika Thakur">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="ie7-and-down.css" />
+    <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('aside');
+   </script>
+<![endif]-->
+ <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
+    <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('aside');
+   </script>
+<![endif]-->
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="header">
+    <div class="col-sm-6">
+    <div class="navbar-header">
+      <a class="navbar-brand head" href="#" style="font-size: 24pt;">Pley</a>
+    </div>
+    </div>
+    <div class="col-sm-6">
+        <a href="#" id="menu-icon"></a>
+        <ul class="nav navbar navbar-nav" id="list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    <!-- end of navigation -->
+
+    <!-- video code here -->
+    <video autoplay="" id="vid" loop>
+        <source src="http://zippy.gfycat.com/SeriousKeenHousefly.webm" type="video/webm">
+    </video>
+
+    <!-- Pley bullet list -->
+    <div id="preview" class="container">
+        <h1>Rent A Lego Set</h1><br/>
+        <p><i class="fa fa-arrow-right"></i> $9.99/month - up to $75 value.</p><br/>
+        <p><i class="fa fa-arrow-right"></i> Lost a piece? We won't charge.</p><br/>
+        <p><i class="fa fa-arrow-right"></i> Clean and sanitized.</p><br/>
+        <p><i class="fa fa-arrow-right"></i> Free shipping both ways!</p><br/>
+        <button type="button" class="btn btn-info center-block btnLg">Sign Up</button>
+    </div>
+
+    <!-- As seen -->
+    <div class="jumbotron margin-offset" style="overflow:hidden;">
+      <div class="row">
+        
+        <div class="col-sm-2">
+          <h3>As seen in</h3>
+        </div>
+        <div class="col-sm-2">
+          <h3>Image2</h3>
+        </div>
+        <div class="col-sm-2">
+          <h3>Image3</h3>        
+        </div>
+        <div class="col-sm-2">
+          <h3>Image4</h3>        
+        </div>
+        <div class="col-sm-2">
+          <h3>Image5</h3>        
+        </div>
+        <div class="col-sm-2">
+          <h3>Image6</h3>        
+        </div>
+       </div>
+    </div>
+    <!-- end of as seen -->
+
+    <!-- how it works -->
+    <div class="container top " >
+    <div class="page-header">
+     <h1 class="text-center">How it Works</h1>      
+    </div>
+    <div class="row">
+    <div class="col-md-4">
+       <img src="http://placehold.it/140x150" alt="Sign Up" class="img-circle img-responsive center-block">
+      <h3 class="text-center">STEP 1</h3>        
+      <p class="text-center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>    
+    </div>
+    <div class="col-md-4">
+       <img src="http://placehold.it/140x150" alt="Sign Up" class="img-circle img-responsive center-block">
+      <h3 class="text-center">STEP 2</h3>        
+      <p class="text-center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>    
+    </div>
+    <div class="col-md-4">
+       <img src="http://placehold.it/140x150" alt="Sign Up" class="img-circle img-responsive center-block">
+      <h3 class="text-center">STEP 3</h3>        
+      <p class="text-center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>    
+    </div>
+    <div class="clearfix visible-lg"></div>
+    </div>
+    </div>
+    <!-- end of how it works -->
+
+    <!-- image of choose from 250+ sets -->
+    <div class="jumbotron margintTop" >
+    <h1 class="text-center">Choose from 250+ sets</h1>
+    <p class="text-center">LEGO Selection includes Star Wars, Friends, Super Heroes, City, Duplo, LEGO movie and
+                    more!</p> 
+    <img src="http://placehold.it/1450x450" width="100%"alt="Collection of 250 Lego sets" class="img-responsive ">   
+      
+    </div>
+    <div class="container">
+        <div class="page-header">
+            <h1 class="text-center">Are you ready to Pley?</h1>
+        </div>
+        <div class="row">
+                  <button type="button" class="btn btn-info center-block btnLg">Let&acute;s Start</button>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer top container" >
+          <div class="col-sm-6 text-left terms">&copy;Copyright <span id="copyRight">Shrutika Thakur</span>|Terms&amp;Condition|FAQ&acute;s
+
+        </div>
+        <div class="col-sm-6  text-right social">
+            <i class="fa fa-facebook fa-2x terms"></i>
+            <i class="fa fa-twitter fa-2x marginLeft terms"></i>
+            <i class="fa fa-pinterest fa-2x marginLeft terms"></i>
+            <i class="fa fa-instagram fa-2x marginLeft terms"></i>
+            <i class="fa fa-youtube fa-2x marginLeft terms"></i>
+        </div>
+    </div>
+    <!-- end of footer -->
+</body>
+
+</html>
