@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vending Machine</title>
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+	
+	<!-- toggle button for hidding and showing add snack button -->
+		<input type="checkbox" name="toggle" id="toggle" />
+		<label for="toggle"></label>
+	<!-- div containing form to add element -->
+	<div class="message">
+		<form name="addElement" >
+		<label> Which Snack you would like to add?</label><br/><br/>
+		<input type="text" name="whichElement" size="50" /><br/><br/>
+		<label> How much quantity you would like to add?</label><br/><br/>
+		<input type="text" name="quantity" size="50" /><br/><br/>
+		<input type="button" value="Add" onclick="addSnack()"/>
+		</form>
+	</div>
+	<!-- main class to display vending machine -->
+	<div class="container">
+		<div class="wrapper">
+			<header>VENDING MACHINE</header>
+			<section class="main">	
+				<div id="vendingMchn" class="box" >
+				</div>
+			</section>
+			<footer>
+				<div class="wrapper">
+					<div>THANK YOU FOR USING</div>
+					<div class="btnGrp">
+					<div id="selectRandom" class="btn float-2">
+						random select
+					</div>
+					<div id="yes" class="btn float-2">Yes</div>
+					<div id="no" class="btn float-2">No</div>
+					</div>
+				</div>
+			</footer>
+			<section class="display">
+				<div id="tongue" class="tongue">
+				</div>
+				<div class="btn float-1 margin-offset" id="pick">PICK
+				</div>
+			</section>
+		</div>
+		
+	</div>
+		<script src="js/add.js"></script>
+
+	<script src="js/random.js"></script>
+
+
+</body>
+
+</html>
